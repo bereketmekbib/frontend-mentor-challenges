@@ -1,0 +1,85 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --mobile: 375px;
+  --desktop: 1440px;
+  --font-w-500: 500;
+  --font-w-800: 800;
+}
+@font-face {
+    font-family: Figtree;
+    src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--yellow);
+  height: 100vh;
+  padding: 1em;
+  margin: 0;
+  font-family: Figtree;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-preview-card {
+    padding: 1em;
+    max-width: var(--mobile);
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 10px 10px var(--gray-950);
+    margin-bottom: 10px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-tag {
+    background-color: var(--yellow);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: var(--font-w-500);
+}
+
+.publish-time {
+    color: var(--gray-500);
+    font-size: 1em;
+}
+
+h2 {
+    font-weight: var(--font-w-800);
+    margin: 0;
+}
+
+h2:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.blog-desc {
+    font-weight: var(--font-w-500);
+    color: var(--gray-500);
+}
+
+.author-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--gray-950);
+    font-weight: var(--font-w-800);
+}
+
+.card-avater {
+    width: 50px;
+    margin-right: 20px;
+}
